@@ -110,6 +110,15 @@ h1 {
     font-weight: 200;
     color: $titleColor;
     margin-bottom: 20px;
+
+    #span {
+        transition: all .6s;
+        transform: translateY(0);
+
+        &.active {
+            color: $hoverColor;
+        }
+    }
 }
 .header__content_text {
     font-size: 22px;
