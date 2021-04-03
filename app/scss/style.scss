@@ -17,6 +17,9 @@ a {
 ul, ol, li {
     list-style: none;
 }
+button {
+    cursor: pointer;
+}
 input,
 button,
 textarea,
@@ -30,8 +33,109 @@ select {
     padding: 0 10px;
 }
 body {
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
     min-height: 100vh;
     scroll-behavior: smooth;
+}
+h1 {
+    font-family: 'Patrick Hand', cursive;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 50px 0;
+}
+.header__list {
+    display: flex;
+
+    &_item {
+        margin-left: 50px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+.header__list_link {
+    color: $mainColor;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all .6s;
+
+    &:hover {
+        color: $hoverColor;
+    }
+}
+.header__media {
+    display: flex;
+
+    &_item {
+        margin-left: 20px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+.header__media_item-img {
+    transition: all .6s;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+.header__content_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    font-size: 100px;
+}
+.header__content_title {
+    font-size: 100px;
+    font-weight: 200;
+    color: $titleColor;
+    margin-bottom: 20px;
+}
+.header__content_text {
+    font-size: 22px;
+    font-weight: 400;
+    color: $mainColor;
+    margin-bottom: 70px;
+}
+.header__btn {
+    width: 265px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(0px);
+    color: $textColor;
+    font-size: 18px;
+    font-weight: 500;
+    border: 3px solid $mainColor;
+    border-radius: 5px;
+    background-color: $hoverColor;
+    transition: all 1s;
+
+    &:hover {
+        border: 3px solid $hoverColor;
+        background-color: rgba(172, 159, 252, .5);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+    }
 }
