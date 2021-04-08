@@ -36,8 +36,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    min-height: 100vh;
-    scroll-behavior: smooth;
+    color: $textColor;
 }
 h1 {
     font-family: 'Patrick Hand', cursive;
@@ -104,10 +103,10 @@ h1 {
 }
 .title {
     font-size: 100px;
+    font-weight: 200;
 }
 .header__content_title {
     font-size: 100px;
-    font-weight: 200;
     color: $titleColor;
     margin-bottom: 20px;
 
@@ -147,4 +146,115 @@ h1 {
         backdrop-filter: blur(10px);
         border-radius: 10px;
     }
+}
+
+
+
+
+
+
+.menu__section {
+    background: $linearBlack;
+    padding: 40px 0;
+}
+.menu__title {
+    color: $titleColor;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.menu__burgers {
+    margin-bottom: 150px;
+}
+.burgers_card {
+    display: flex;
+    flex-direction: column;
+}
+.menu__cards_title {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+.card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 670px;
+    min-height: 225px;
+    background-color: $cardColor;
+    box-shadow: 0 0 70px rgba(114, 113, 94, 1);
+    border-radius: 40px;
+    padding: 30px 40px 30px 30px;
+    margin-bottom: 85px;
+    transition: all 1s;
+
+    &:hover {
+        background-color: #AC9FFC;
+        box-shadow: 0 0 40px rgb(104, 90, 143);
+    }
+
+    &:hover .card__count{
+        color: #fff;
+    }
+}
+.card__product {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-5px);
+}
+.card__title {
+    font-size: 30px;
+    font-weight: 400;
+    color: $textColor;
+    transition: all 1s;
+}
+.card__img {
+    width: 200px;
+    height: 125px;
+    transform: translate(-30px, 10px);
+}
+.first__card_img {
+    transform: translate(-25px, 0);
+}
+.fifth__card_img {
+    width: 220px;
+    height: 135px;
+    transform: translate(-40px, 10px);
+}
+.fourth__card_img-pizzas {
+    transform: translate(-40px, 10px);
+}
+.card__info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.card__count {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    transition: all 1s;
+}
+.card__text {
+    color: #000;
+    line-height: 22px;
+}
+.pizzas__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+
+
+
+
+
+.party {
+    background: $linearMain;
 }
