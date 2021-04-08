@@ -256,5 +256,40 @@ h1 {
 
 
 .party {
+    padding: 70px 0;
     background: $linearMain;
+    color: #fff;
+    text-align: center;
+}
+.party__title {
+    margin-bottom: 120px;
+}
+.party__subtitle {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+.party__text {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 150px;
+    line-height: 30px;
+}
+.party__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.party__card_img {
+    transition: all 1s;
+
+    &:hover {
+        transform: translate(0, -40px) rotateX(20deg) rotateY(20deg);
+        box-shadow: 0 0 100px rgba(255, 255, 255, 0.5);
+    }
+}
+.party__footer {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
 }
