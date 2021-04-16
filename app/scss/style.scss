@@ -293,3 +293,110 @@ h1 {
     font-weight: 300;
     line-height: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery {
+    background: $linearYel;
+    padding: 70px 0 110px 0;
+    color: $textColor;
+}
+.gallery__title {
+    margin-bottom: 150px;
+}
+.slider {
+    max-width: 850px;
+    max-height: 550px;
+    padding: 0 60px;
+}
+.slider__item_img {
+    max-width: 850px;
+    max-height: 550px;
+}
+.gallery__wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+.slick-slider {
+
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick-track {
+    display: flex;
+}
+.slick-slide {
+
+}
+.slick-arrow {
+
+}
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 0;
+    border: 0px;
+    background: transparent;
+    transition: all .6s;
+}
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    border: 20px solid transparent; 
+    border-right: 28px solid #333333;
+
+    &:hover {
+        border-right: 28px solid #AC9FFC;
+    }
+}
+.slider .slick-arrow.slick-next {
+    right: 0;
+    border: 20px solid transparent; 
+    border-left: 28px solid #333333;
+
+    &:hover {
+        border-left: 28px solid #AC9FFC;
+    }
+}
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+}
+.slider .slick-dots li {
+    margin-left: 25px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+.slider .slick-dots button {
+    background-color: $hoverColor;
+    border: 2px solid transparent;
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: all .6s;
+
+    &:hover {
+        background-color: #252525;
+    }
+}
+.slider .slick-dots li.slick-active button {
+    border: 2px solid #252525;
+}
