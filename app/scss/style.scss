@@ -400,3 +400,46 @@ h1 {
 .slider .slick-dots li.slick-active button {
     border: 2px solid #252525;
 }
+
+
+
+
+
+
+
+
+.holidays {
+    background: linear-gradient(180deg, #FFF068, #FFE790);
+    padding: 0 0 100px;
+    color: $textColor;
+}
+.holidays__title {
+    margin-bottom: 150px;
+}
+.holidays__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.holidays__subtitle, .holidays__text {
+    text-align: center;
+    font-size: 24px;
+}
+.holidays__subtitle {
+    margin-bottom: 100px;
+}
+.holidays__images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.holidays__img {
+    max-width: 48%;
+    border-radius: 30px;
+    transition: all .6s;
+
+    &:hover {
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, .5);
+        transform: scale(1.1);
+    }
+}
