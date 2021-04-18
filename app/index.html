@@ -7,6 +7,7 @@
     <title>Бар "Луна"</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -19,19 +20,19 @@
                 <nav class="header__menu menu">
                     <ul class="header__list">
                         <li class="header__list_item">
-                            <a href="#" class="header__list_link">Главная</a>
+                            <a href="#" class="header__list_link" id="main">Главная</a>
                         </li>
                         <li class="header__list_item">
-                            <a href="#" class="header__list_link">Галерея</a>
+                            <a href="#" class="header__list_link" id="menu">Меню</a>
                         </li>
                         <li class="header__list_item">
-                            <a href="#" class="header__list_link">Меню</a>
+                            <a href="#" class="header__list_link" id="gallery">Галерея</a>
                         </li>
                         <li class="header__list_item">
-                            <a href="#" class="header__list_link">Праздники</a>
+                            <a href="#" class="header__list_link" id="holidays">Праздники</a>
                         </li>
                         <li class="header__list_item">
-                            <a href="#" class="header__list_link">Контакты</a>
+                            <a href="#" class="header__list_link" id="contacts">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -380,6 +381,9 @@
             </div>
         </div>
     </footer>
+    <button class="btn__to_top">
+        <i class="fas fa-sort-up btn__top_icon"></i>
+    </button>
 
 
     <script src="js/main.min.js"></script>

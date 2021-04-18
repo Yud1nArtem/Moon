@@ -564,3 +564,31 @@ h1 {
     color: #fff;
     font-size: 18px;
 }
+
+
+.btn__to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(189, 189, 189, 0.2);
+    backdrop-filter: blur(2px);
+    font-size: 28px;
+    border: none;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    transition: all .6s;
+}
+.btn__to_top.active {
+    transform: scale(0);
+}
+.btn__to_top:hover {
+    background-color: rgba(225, 225, 225, 0.633);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+.btn__top_icon {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
