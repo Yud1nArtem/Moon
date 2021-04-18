@@ -423,7 +423,8 @@ h1 {
 }
 .holidays__subtitle, .holidays__text {
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 30px;
 }
 .holidays__subtitle {
     margin-bottom: 100px;
@@ -442,4 +443,108 @@ h1 {
         box-shadow: 0 0 20px 10px rgba(0, 0, 0, .5);
         transform: scale(1.1);
     }
+}
+
+
+
+
+
+.contacts {
+    background: $linearBlack;
+    color: #fff;
+    padding: 100px 0;
+}
+.contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacts__title {
+    color: $hoverColor;
+    margin-bottom: 70px;
+}
+.contacts__text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.yellow {
+    color: $mainColor;
+    font-weight: 700;
+}
+
+.purple {
+    color: $hoverColor;
+    font-weight: 700;
+}
+.bold {
+    font-weight: 900;
+    margin-left: 3px;
+    transition: all .6s;
+
+    &:hover {
+        color: $hoverColor;
+    }
+}
+.contacts__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.contacts__info_tel {
+    margin-bottom: 75px;
+}
+.contacts__info_title {
+    font-size: 30px;
+    font-weight: 700;
+    color: $hoverColor;
+    margin-bottom: 30px;
+}
+.contacts__info_text {
+    margin-bottom: 30px;
+    margin-left: 50px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.info__text_map {
+    color: #fff;
+    margin-left: 3px;
+}
+.email {
+    margin-left: 3px;
+}
+.contacts__info_time {
+    span {
+        margin-left: 3px;
+    }
+
+    .big {
+        font-size: 18px;
+        font-weight: 900;
+    }
+}
+.contacts__info_right {
+    width: 50%;
+}
+.contacts__map_item {
+    width: 100%;
+    min-height: 500px;
+    border: 2px solid $hoverColor;
+    box-shadow: 0 0 70px 10px rgba(172, 159, 252, .4);
+    transition: all .6s;
+
+    &:hover {
+        border: 2px solid $mainColor;
+        box-shadow: 0 0 60px 10px rgba(255, 251, 144, .3);
+    }
+}
+
+
+.footer {
+    background: #1B1B1B;
+    padding: 100px 0;
 }
