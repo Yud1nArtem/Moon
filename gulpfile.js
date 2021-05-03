@@ -43,6 +43,7 @@ function scripts() {
         'app/js/title.js',
         'app/js/btn.js',
         'app/js/btnTop.js',
+        'app/js/burger.js',
         'app/js/main.js',
     ])
     .pipe(concat('main.min.js'))
