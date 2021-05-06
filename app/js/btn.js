@@ -9,6 +9,11 @@ $(function () {
             scrollTop: $('.menu__section').offset().top
         }, 1000);
     });
+    $('#party').click(() => {
+        $('html, body').animate({
+            scrollTop: $('.party').offset().top
+        }, 1000);
+    });
     $('#gallery').click(() => {
         $('html, body').animate({
             scrollTop: $('.gallery').offset().top
