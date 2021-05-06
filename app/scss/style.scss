@@ -705,6 +705,10 @@ h1 {
 }
 
 @media (max-width: 1200px) {
+    .header {
+        max-height: 1366px;
+        background-size: cover;
+    }
     .header__list {
         &_item {
             margin-left: 40px;
@@ -1007,6 +1011,10 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    .header {
+        height: 1024px;
+        background-size: cover;
+    }
     .title {
         font-size: 50px;
     }
